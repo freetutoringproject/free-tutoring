@@ -1,32 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Tutoring</title>
+
+    <title>Free Tutoring | Math, Science & Computer Science</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #1f2937;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 60px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #374151;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: 0 auto 35px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #2563eb;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button.secondary {
+            background-color: white;
+            color: #2563eb;
+            border: 1px solid #2563eb;
+        }
+
+        section {
+            padding: 70px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .subjects {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .subject {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Free Tutoring for K–8 Students</h1>
+    <header>
+        <nav>
+            <div class="logo">Free Tutoring</div>
 
-    <p>
-        Free academic support in Math, Science, and Computer Science.
-    </p>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#how-it-works">How It Works</a>
+            </div>
+        </nav>
+    </header>
 
-    <h2>What We Offer</h2>
+    <main>
 
-    <p>
-        We provide free tutoring to K–8 students who may not have access
-        to expensive private tutoring.
-    </p>
+        <section class="hero">
 
-    <h2>Subjects</h2>
+            <h1>Learning should be accessible to everyone.</h1>
 
-    <ul>
-        <li>Math</li>
-        <li>Science</li>
-        <li>Computer Science</li>
-    </ul>
+            <p>
+                Free academic support in Math, Science, and Computer Science
+                for K–8 students.
+            </p>
+
+            <a href="#get-tutoring" class="button">
+                Get Free Tutoring
+            </a>
+
+            <a href="#become-a-tutor" class="button secondary">
+                Become a Tutor
+            </a>
+
+        </section>
+
+        <section id="about">
+
+            <h2>Why We Exist</h2>
+
+            <p>
+                High-quality tutoring can be expensive, and not every student
+                has access to the academic support they need. This project
+                provides free tutoring to K–8 students so that cost doesn't
+                have to be a barrier to learning.
+            </p>
+
+        </section>
+
+        <section id="subjects">
+
+            <h2>What We Teach</h2>
+
+            <div class="subjects">
+
+                <div class="subject">
+                    <h3>Math</h3>
+                    <p>
+                        Build strong foundations, solve problems, and gain
+                        confidence with math.
+                    </p>
+                </div>
+
+                <div class="subject">
+                    <h3>Science</h3>
+                    <p>
+                        Understand scientific concepts and work through
+                        challenging problems.
+                    </p>
+                </div>
+
+                <div class="subject">
+                    <h3>Computer Science</h3>
+                    <p>
+                        Explore programming and learn the fundamentals of
+                        computer science.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="how-it-works">
+
+            <h2>How It Works</h2>
+
+            <p>
+                Students request tutoring, we learn what they need help with,
+                and then arrange free tutoring sessions.
+            </p>
+
+        </section>
+
+        <section id="get-tutoring">
+
+            <h2>Get Free Tutoring</h2>
+
+            <p>
+                Tutoring requests will be available here soon.
+            </p>
+
+        </section>
+
+        <section id="become-a-tutor">
+
+            <h2>Become a Tutor</h2>
+
+            <p>
+                Interested in volunteering? Information about becoming a tutor
+                will be available here soon.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Free Tutoring • Math • Science • Computer Science</p>
+    </footer>
 
 </body>
+
 </html>
