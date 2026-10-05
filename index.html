@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,20 +6,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Free Tutoring | Math, Science & Computer Science</title>
+    <title>Free Tutoring | Accessible Learning for K–8 Students</title>
 
     <style>
+
+        /* ---------- GENERAL ---------- */
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f7f9fc;
-            color: #1f2937;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
         }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ---------- NAVIGATION ---------- */
 
         header {
             background-color: white;
-            padding: 20px 60px;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 18px 7%;
         }
 
         nav {
@@ -28,42 +40,57 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
+            color: #1e3a8a;
         }
 
         .nav-links a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #374151;
+            margin-left: 30px;
+            color: #475569;
+            font-size: 15px;
         }
 
+        .nav-links a:hover {
+            color: #1e3a8a;
+        }
+
+
+        /* ---------- HERO ---------- */
+
         .hero {
+            background-color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 110px 20px 100px;
         }
 
         .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            font-size: 56px;
+            line-height: 1.1;
+            color: #0f172a;
         }
 
         .hero p {
-            font-size: 20px;
             max-width: 650px;
             margin: 0 auto 35px;
-            line-height: 1.6;
+            font-size: 20px;
+            color: #64748b;
         }
 
         .button {
             display: inline-block;
-            padding: 14px 25px;
+            padding: 14px 28px;
             margin: 5px;
-            text-decoration: none;
-            border-radius: 8px;
+            border-radius: 7px;
             background-color: #2563eb;
             color: white;
             font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
         }
 
         .button.secondary {
@@ -72,62 +99,212 @@
             border: 1px solid #2563eb;
         }
 
+
+        /* ---------- SECTIONS ---------- */
+
         section {
-            padding: 70px 20px;
+            padding: 90px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: auto;
+            color: #64748b;
+        }
+
+
+        /* ---------- WHY WE EXIST ---------- */
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #475569;
+        }
+
+
+        /* ---------- SUBJECTS ---------- */
+
+        .subjects-section {
+            background-color: #f1f5f9;
+        }
+
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
             max-width: 1000px;
             margin: auto;
         }
 
-        section h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-
-        .subjects {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
         .subject {
             background-color: white;
-            padding: 30px;
+            padding: 35px;
             border-radius: 12px;
-            width: 250px;
             text-align: center;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
         }
 
+        .subject h3 {
+            font-size: 23px;
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+
+        .subject p {
+            color: #64748b;
+        }
+
+
+        /* ---------- HOW IT WORKS ---------- */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .step h3 {
+            font-size: 22px;
+            margin: 5px 0 10px;
+        }
+
+        .step p {
+            color: #64748b;
+        }
+
+
+        /* ---------- VOLUNTEER ---------- */
+
+        .volunteer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+        }
+
+        .volunteer h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .volunteer p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #dbeafe;
+        }
+
+        .volunteer .button {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
         footer {
+            background-color: #0f172a;
+            color: #94a3b8;
             text-align: center;
             padding: 30px;
-            background-color: white;
-            border-top: 1px solid #e5e7eb;
+            font-size: 14px;
         }
+
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 18px 5%;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .subjects,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 20px;
+            }
+        }
+
     </style>
 </head>
 
+
 <body>
 
+    <!-- NAVIGATION -->
+
     <header>
+
         <nav>
-            <div class="logo">Free Tutoring</div>
+
+            <div class="logo">
+                Free Tutoring
+            </div>
 
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#subjects">Subjects</a>
                 <a href="#how-it-works">How It Works</a>
             </div>
+
         </nav>
+
     </header>
+
 
     <main>
 
+
+        <!-- HERO -->
+
         <section class="hero">
 
-            <h1>Learning should be accessible to everyone.</h1>
+            <h1>
+                Learning should be accessible to everyone.
+            </h1>
 
             <p>
                 Free academic support in Math, Science, and Computer Science
@@ -138,97 +315,209 @@
                 Get Free Tutoring
             </a>
 
-            <a href="#become-a-tutor" class="button secondary">
+            <a href="#volunteer" class="button secondary">
                 Become a Tutor
             </a>
 
         </section>
 
+
+        <!-- ABOUT -->
+
         <section id="about">
 
-            <h2>Why We Exist</h2>
+            <div class="about">
 
-            <p>
-                High-quality tutoring can be expensive, and not every student
-                has access to the academic support they need. This project
-                provides free tutoring to K–8 students so that cost doesn't
-                have to be a barrier to learning.
-            </p>
+                <div class="section-title">
+                    <h2>Why We Exist</h2>
+                </div>
+
+                <p>
+                    High-quality tutoring can be expensive, and not every
+                    student has access to the academic support they need.
+                    We provide free tutoring to K–8 students so that cost
+                    does not have to be a barrier to learning.
+                </p>
+
+            </div>
 
         </section>
 
-        <section id="subjects">
 
-            <h2>What We Teach</h2>
+        <!-- SUBJECTS -->
+
+        <section id="subjects" class="subjects-section">
+
+            <div class="section-title">
+
+                <h2>What We Teach</h2>
+
+                <p>
+                    Students can receive free support in a range of
+                    foundational academic subjects.
+                </p>
+
+            </div>
+
 
             <div class="subjects">
 
                 <div class="subject">
+
                     <h3>Math</h3>
+
                     <p>
                         Build strong foundations, solve problems, and gain
-                        confidence with math.
+                        confidence with mathematics.
                     </p>
+
                 </div>
 
+
                 <div class="subject">
+
                     <h3>Science</h3>
+
                     <p>
                         Understand scientific concepts and work through
                         challenging problems.
                     </p>
+
                 </div>
 
+
                 <div class="subject">
+
                     <h3>Computer Science</h3>
+
                     <p>
                         Explore programming and learn the fundamentals of
                         computer science.
                     </p>
+
                 </div>
 
             </div>
 
         </section>
 
+
+        <!-- HOW IT WORKS -->
+
         <section id="how-it-works">
 
-            <h2>How It Works</h2>
+            <div class="section-title">
 
-            <p>
-                Students request tutoring, we learn what they need help with,
-                and then arrange free tutoring sessions.
-            </p>
+                <h2>How It Works</h2>
+
+                <p>
+                    Getting academic support should be simple.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>Request Help</h3>
+
+                    <p>
+                        Tell us what subject and topics you need help with.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>Get Matched</h3>
+
+                    <p>
+                        We connect you with an appropriate volunteer tutor.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>Learn</h3>
+
+                    <p>
+                        Meet with your tutor and work toward your goals.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section id="get-tutoring">
 
-            <h2>Get Free Tutoring</h2>
+        <!-- GET TUTORING -->
+
+        <section id="get-tutoring" class="about">
+
+            <div class="section-title">
+
+                <h2>Get Free Tutoring</h2>
+
+                <p>
+                    Tutoring requests will be available here soon.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- VOLUNTEER -->
+
+        <section id="volunteer" class="volunteer">
+
+            <h2>Want to Make a Difference?</h2>
 
             <p>
-                Tutoring requests will be available here soon.
+                Volunteer your time and help a younger student build
+                confidence in a subject you enjoy.
             </p>
+
+            <a href="#" class="button">
+                Become a Tutor
+            </a>
 
         </section>
 
-        <section id="become-a-tutor">
-
-            <h2>Become a Tutor</h2>
-
-            <p>
-                Interested in volunteering? Information about becoming a tutor
-                will be available here soon.
-            </p>
-
-        </section>
 
     </main>
 
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>Free Tutoring • Math • Science • Computer Science</p>
+
+        <p>
+            Free Tutoring • Math • Science • Computer Science
+        </p>
+
     </footer>
+
 
 </body>
 
 </html>
+```
